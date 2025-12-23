@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme Test</title>
+    <style>
+      :root {
+        --bg-primary: #ffffff;
+        --text-primary: #0f172a;
+      }
+
+      [data-theme="dark"] {
+        --bg-primary: #0a0f1e;
+        --text-primary: #f8fafc;
+      }
+
+      body {
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+        font-family: Arial, sans-serif;
+        padding: 40px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .debug {
+        margin-top: 20px;
+        padding: 20px;
+        border: 2px solid currentColor;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Theme Toggle Test</h1>
+    <button id="toggleBtn">Toggle Theme</button>
+
+    <div class="debug">
+      <p>Current theme: <span id="currentTheme"></span></p>
+      <p>HTML data-theme attribute: <span id="htmlAttr"></span></p>
+      <p>Background should change between white and dark blue</p>
+    </div>
+
+    <script>
+      const btn = document.getElementById("toggleBtn");
+      const htmlElement = document.documentElement;
+
+      function updateDebugInfo() {
+        const theme = htmlElement.getAttribute("data-theme");
+        document.getElementById("currentTheme").textContent = theme;
+        document.getElementById("htmlAttr").textContent = theme;
+        console.log("Current theme:", theme);
+      }
+
+      updateDebugInfo();
+
+      btn.addEventListener("click", function () {
+        console.log("Button clicked!");
+        const currentTheme = htmlElement.getAttribute("data-theme");
+        const newTheme = currentTheme === "light" ? "dark" : "light";
+        console.log("Switching from", currentTheme, "to", newTheme);
+        htmlElement.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+        updateDebugInfo();
+      });
+    </script>
+  </body>
+</html>

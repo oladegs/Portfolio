@@ -1,0 +1,254 @@
+﻿
+>     <!-- Projects Section -->
+      <section id="projects" class="section-padding bg-alt">
+        <div class="container">
+          <div class="section-header text-center mb-5">
+            <p class="section-subtitle">PORTFOLIO</p>
+            <h2 class="section-title">Projects</h2>
+            <p class="section-description">
+              A mix of client work, community builds, and personal labsâ€”covering
+              UI, APIs, and production ops.
+            </p>
+          </div>
+          <div class="row g-4">
+            <!-- Project 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="project-card">
+                <div class="project-content">
+                  <h4 class="project-title">Alex Renovation Website</h4>
+                  <p class="project-description">
+                    Marketing site built with React + responsive Tailwind layout.
+                    Optimized Lighthouse scores, image loading, and SEO metadata.
+                  </p>
+                  <div class="project-tech mb-3">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Vite</span>
+                    <span class="tech-tag">Tailwind</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-sm btn-primary me-2">
+                      Live Site <i class="bi bi-arrow-up-right ms-1"></i>
+                    </a>
+                    <a href="#" class="btn btn-sm btn-outline-secondary">
+                      Repo <i class="bi bi-github ms-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Project 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="project-card">
+                <div class="project-content">
+                  <h4 class="project-title">AutoInsight (Marketing + App)</h4>
+                  <p class="project-description">
+                    Marketing site in React; mobile app in Expo/React Native for
+                    on-site inspections. Python/FastAPI backend for VIN decode,
+                    image upload, and appraisal endpoints.
+                  </p>
+                  <div class="project-tech mb-3">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">SQLite/SQL</span>
+                    <span class="tech-tag">AWS</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-sm btn-primary me-2">
+                      Live Site <i class="bi bi-arrow-up-right ms-1"></i>
+                    </a>
+                    <a href="#" class="btn btn-sm btn-outline-secondary">
+                      App Repo <i class="bi bi-github ms-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Project 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="project-card">
+                <div class="project-content">
+                  <h4 class="project-title">AwoInventoryManager</h4>
+                  <p class="project-description">
+                    Inventory management system for a company that sells inventory
+                    to other companies. This system allows the company to manage
+                    their inventory, track sales, and generate reports.
+                  </p>
+                  <div class="project-tech mb-3">
+                    <span class="tech-tag">NextJS</span>
+                    <span class="tech-tag">Tailwind CSS</span>
+                    <span class="tech-tag">Vercel</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-sm btn-primary me-2">
+                      Live Site <i class="bi bi-arrow-up-right ms-1"></i>
+                    </a>
+                    <a href="#" class="btn btn-sm btn-outline-secondary">
+                      Repo <i class="bi bi-github ms-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Project 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="project-card">
+                <div class="project-content">
+                  <h4 class="project-title">Dog Event App</h4>
+                  <p class="project-description">
+                    Spring Boot domain model for owners, dogs, judges, and event
+                    assignments. RESTful APIs, validation, and relational mapping
+                    with JPA.
+                  </p>
+                  <div class="project-tech mb-3">
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">JPA</span>
+                    <span class="tech-tag">REST</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-sm btn-outline-secondary">
+                      Repo <i class="bi bi-github ms-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Project 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="project-card">
+                <div class="project-content">
+                  <h4 class="project-title">Yaseen Musallah App</h4>
+                  <p class="project-description">
+                    Community app with schedule display and announcements. Clean
+                    UI, offline-friendly UX, and deployment automation.
+                  </p>
+                  <div class="project-tech mb-3">
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">Expo</span>
+                    <span class="tech-tag">Node/Express</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-sm btn-primary me-2">
+                      Live Site <i class="bi bi-arrow-up-right ms-1"></i>
+                    </a>
+                    <a href="#" class="btn btn-sm btn-outline-secondary">
+                      Repo <i class="bi bi-github ms-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Project 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="project-card">
+                <div class="project-content">
+                  <h4 class="project-title">Java Email Service</h4>
+                  <p class="project-description">
+                    Templated email sender with queue/retry logic and provider
+                    failover. Secured secrets and environment config for multiple
+                    environments.
+                  </p>
+                  <div class="project-tech mb-3">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Spring</span>
+                    <span class="tech-tag">SMTP</span>
+                    <span class="tech-tag">Email Service</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-sm btn-outline-secondary">
+                      Repo <i class="bi bi-github ms-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Project 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="project-card">
+                <div class="project-content">
+                  <h4 class="project-title">JavaScript Mini-Games</h4>
+                  <p class="project-description">
+                    Rock-Paper-Scissors and Guess-the-Number with clean state
+                    management. Accessible controls, sound toggles, and score
+                    persistence.
+                  </p>
+                  <div class="project-tech mb-3">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-sm btn-primary me-2">
+                      Live Site <i class="bi bi-arrow-up-right ms-1"></i>
+                    </a>
+                    <a href="#" class="btn btn-sm btn-outline-secondary">
+                      Repo <i class="bi bi-github ms-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Project 8 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="project-card">
+                <div class="project-content">
+                  <h4 class="project-title">Timhortons Demo App</h4>
+                  <p class="project-description">
+                    A demo app for Timhortons that allows users to view the menu
+                    and place orders.
+                  </p>
+                  <div class="project-tech mb-3">
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-sm btn-outline-secondary">
+                      Repo <i class="bi bi-github ms-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Project 9 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="project-card">
+                <div class="project-content">
+                  <h4 class="project-title">E-commerce Fullstack App</h4>
+                  <p class="project-description">
+                    Full e-commerce platform with user authentication, product
+                    catalog, shopping cart, and order management for users and
+                    admins.
+                  </p>
+                  <div class="project-tech mb-3">
+                    <span class="tech-tag">HTML/CSS</span>
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">Thymeleaf</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn btn-sm btn-outline-secondary">
+                      Repo <i class="bi bi-github ms-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Documents Section -->
+      <section id="documents" class="section-padding">
+
+

@@ -1,0 +1,132 @@
+﻿:root {
+  --color-bg: #ffffff;
+  --color-surface: #f8fafc;
+  --color-text: #0f172a;
+  --color-accent: #2563eb;
+  --color-border: #e2e8f0;
+}
+
+.dark {
+  --color-bg: #0b1220;
+  --color-surface: #111827;
+  --color-text: #e2e8f0;
+  --color-accent: #60a5fa;
+  --color-border: #1f2937;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.bg-background {
+  background: var(--color-bg) !important;
+}
+
+.bg-background\/80 {
+  background: color-mix(in srgb, var(--color-bg), transparent 20%) !important;
+}
+
+.text-text {
+  color: var(--color-text) !important;
+}
+
+.text-accent {
+  color: var(--color-accent) !important;
+}
+
+.border-bottom,
+.border-top {
+  border-color: var(--color-border) !important;
+}
+
+.card-soft {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.btn-accent {
+  background: var(--color-accent);
+  color: #ffffff;
+  border-radius: 0.75rem;
+  padding: 0.6rem 1.2rem;
+}
+
+.btn-accent:hover {
+  background: color-mix(in srgb, var(--color-accent), #000000 10%);
+  color: #ffffff;
+}
+
+.btn-outline-accent {
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  border-radius: 0.75rem;
+  padding: 0.6rem 1.2rem;
+}
+
+.btn-outline-accent:hover {
+  background: color-mix(in srgb, var(--color-accent), transparent 85%);
+  color: var(--color-accent);
+}
+
+.badge-soft {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  color: color-mix(in srgb, var(--color-text), transparent 30%);
+  font-weight: 500;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.letter-spaced {
+  letter-spacing: 0.2em;
+}
+
+.nav-link {
+  color: color-mix(in srgb, var(--color-text), transparent 30%) !important;
+  font-weight: 500;
+}
+
+.nav-link.active {
+  color: var(--color-accent) !important;
+}
+
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.hero-section {
+  padding-top: 5rem;
+}
+
+.form-control {
+  border-radius: 0.75rem;
+  border-color: var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.form-control:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--color-accent), transparent 70%);
+}
+
+.text-muted {
+  color: color-mix(in srgb, var(--color-text), transparent 45%) !important;
+}

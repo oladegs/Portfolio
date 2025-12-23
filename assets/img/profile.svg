@@ -1,0 +1,29 @@
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="600" fill="#0F172A"/>
+  
+  <!-- Gradient overlay -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:0.2" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#grad1)"/>
+  
+  <!-- Profile icon -->
+  <circle cx="300" cy="220" r="80" fill="#10B981" opacity="0.3"/>
+  <circle cx="300" cy="220" r="60" fill="#10B981"/>
+  
+  <!-- Body -->
+  <ellipse cx="300" cy="450" rx="120" ry="150" fill="#10B981" opacity="0.3"/>
+  <ellipse cx="300" cy="420" rx="100" ry="130" fill="#10B981"/>
+  
+  <!-- Text -->
+  <text x="300" y="550" font-family="Arial, sans-serif" font-size="24" fill="#10B981" text-anchor="middle" font-weight="bold">
+    Fuwad Oladega
+  </text>
+  <text x="300" y="580" font-family="Arial, sans-serif" font-size="16" fill="#94A3B8" text-anchor="middle">
+    Replace with your photo
+  </text>
+</svg>
