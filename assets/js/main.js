@@ -105,42 +105,74 @@ function initScrollAnimations() {
   ).matches;
   if (prefersReducedMotion) return;
 
+  // Premium IntersectionObserver with better performance
   const observerOptions = {
     root: null,
-    rootMargin: "0px 0px -100px 0px",
-    threshold: 0.1,
+    rootMargin: "0px 0px -80px 0px", // Trigger slightly earlier for smoother feel
+    threshold: [0, 0.1, 0.25], // Multiple thresholds for progressive reveal
   };
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
+        // Optional: Stop observing after animation to improve performance
+        observer.unobserve(entry.target);
       }
     });
   }, observerOptions);
 
+  // Observe existing fade-in elements
   const fadeElements = document.querySelectorAll(".fade-in");
   fadeElements.forEach((el) => observer.observe(el));
 
+  // Auto-add fade-in to project cards with stagger
   const projectCards = document.querySelectorAll(".project-card");
   projectCards.forEach((card, index) => {
-    card.classList.add("fade-in");
-    card.style.transitionDelay = `${index * 0.1}s`;
-    observer.observe(card);
+    if (!card.classList.contains("fade-in")) {
+      card.classList.add("fade-in");
+      card.style.transitionDelay = `${index * 0.1}s`;
+      observer.observe(card);
+    }
   });
 
+  // Auto-add fade-in to document cards with stagger
   const documentCards = document.querySelectorAll(".document-card");
   documentCards.forEach((card, index) => {
-    card.classList.add("fade-in");
-    card.style.transitionDelay = `${index * 0.1}s`;
-    observer.observe(card);
+    if (!card.classList.contains("fade-in")) {
+      card.classList.add("fade-in");
+      card.style.transitionDelay = `${index * 0.1}s`;
+      observer.observe(card);
+    }
   });
 
+  // Auto-add fade-in to timeline items with stagger
   const timelineItems = document.querySelectorAll(".timeline-item");
   timelineItems.forEach((item, index) => {
-    item.classList.add("fade-in");
-    item.style.transitionDelay = `${index * 0.15}s`;
-    observer.observe(item);
+    if (!item.classList.contains("fade-in")) {
+      item.classList.add("fade-in");
+      item.style.transitionDelay = `${index * 0.15}s`;
+      observer.observe(item);
+    }
+  });
+
+  // Auto-add fade-in to service/work cards
+  const serviceCards = document.querySelectorAll(".service-card, .work-card, .strength-card");
+  serviceCards.forEach((card, index) => {
+    if (!card.classList.contains("fade-in")) {
+      card.classList.add("fade-in");
+      card.style.transitionDelay = `${index * 0.1}s`;
+      observer.observe(card);
+    }
+  });
+
+  // Auto-add fade-in to section headers
+  const sectionHeaders = document.querySelectorAll(".section-header");
+  sectionHeaders.forEach((header) => {
+    if (!header.classList.contains("fade-in")) {
+      header.classList.add("fade-in");
+      observer.observe(header);
+    }
   });
 }
 
